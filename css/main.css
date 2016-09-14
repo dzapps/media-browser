@@ -1,0 +1,14 @@
+.directory-list tr td:last-child {
+    width: 100px;
+}
+
+.directory-list tr:active,
+.table-striped .directory-list tr:active {
+    background-color: transparent !important;
+    color:  #333;
+}
+
+.directory-list tr:active,
+.table-striped .directory-list tr:nth-child(even):active {
+    background-color: #f5f5f4 !important;
+}

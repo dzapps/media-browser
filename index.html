@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Media Browser - Browse your media files with ease.</title>
+        <link rel="stylesheet" href="css/photon.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+    <div class="window">
+        <header class="toolbar toolbar-header" style="-webkit-app-region: drag">
+            <h1 class="title">Media Browser</h1>
+        </header>
+
+        <div class="window-content">
+            <div class="pane-group">
+                <div class="pane pane-sm sidebar">
+                    <ul class="list-group folders">
+                        <li class="list-group-header">
+                            <button class="btn btn-default set-directory">Choose Media Folder</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pane">
+                    <table class="table-striped">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="directory-list">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <footer class="toolbar toolbar-footer">
+        <h1 class="title"></h1>
+        </footer>
+    </div>
+    </body>
+
+    <script>
+        // You can also require other files to run in this process
+        require('./renderer.js')
+        require('./app.js')
+    </script>
+</html>
